@@ -3,7 +3,7 @@ import { useRef, useEffect, useState } from "react";
 import { FiVideo, FiVideoOff, FiMic, FiMicOff } from "react-icons/fi";
 
 const configuration = {
-  
+
   iceServers: [
     {
       urls: ["stun:stun1.l.google.com:19302", "stun:stun2.l.google.com:19302"],
@@ -11,7 +11,7 @@ const configuration = {
   ],
   iceCandidatePoolSize: 10,
 };
-const socket = io("http://localhost:3000", { transports: ["websocket"] });
+const socket = io("https://videostreamingbackend-1.onrender.com", { transports: ["websocket"] });
 
 let pc;
 let localStream;
