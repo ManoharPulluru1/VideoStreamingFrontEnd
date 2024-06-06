@@ -3,6 +3,7 @@ import { useRef, useEffect, useState } from "react";
 import { FiVideo, FiVideoOff, FiMic, FiMicOff } from "react-icons/fi";
 
 const configuration = {
+  
   iceServers: [
     {
       urls: ["stun:stun1.l.google.com:19302", "stun:stun2.l.google.com:19302"],
